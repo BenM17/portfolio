@@ -1,0 +1,3 @@
+[0513/220942.732:ERROR:process_info.cc(329)] VirtualQueryEx: Toegang geweigerd. (0x5)
+[0513/220942.736:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0513/220942.736:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Er is geprobeerd toegang te krijgen tot een proces dat wordt afgesloten. (0xc000010a)

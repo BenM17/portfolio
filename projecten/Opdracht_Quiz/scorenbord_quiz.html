@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="img/gif">
+    <meta name="description" content="Welcome on my quizpage.">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="Coolest retro quiz in da whole wide world baby">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+
+<body class="" onload="buildTable()">
+    <div class="container-sm mb-3">
+
+        <div class="card mb-5 mt-3 border-0">
+            <img src="https://media.giphy.com/media/1PgA8NOCKfgOYXfNAr/source.gif" class="card-img-top"
+                alt="Scoreboard">
+        </div>
+
+
+        <div class="row">
+            <div class="text-center col-md-4">
+                <p><i class="fas fa-award text-danger"></i> Bronze</p>
+            </div>
+            <div class="text-center col-md-4">
+                <p><i class="fas fa-medal text-muted"></i> Silver</p>
+            </div>
+            <div class="text-center col-md-4">
+                <p><i class="fas fa-trophy text-warning"></i> Gold</p>
+            </div>
+        </div>
+        <hr>
+
+        <h2 class="text-center text-primary"><i class="fas fa-paw"></i> Animals! <i class="fas fa-paw"></i></h2>
+        <table class="table mb-5 text-center table-primary table-striped table-hover" id="tableAnimals">
+            <thead>
+                <tr class="bg-primary text-white">
+                    <th scope="col">Trophy</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody id="myTable_1" name="table">
+
+            </tbody>
+        </table>
+
+
+        <h2 class="text-center text-warning mt-5"><i class="fas fa-gamepad"></i> Did you know your retro games? <i
+                class="fas fa-gamepad"></i></h2>
+
+        <table class="table mb-5 text-center table-warning table-striped table-hover" id="tableRetro">
+            <thead>
+                <tr class="bg-warning text-white">
+                    <th scope="col">Trophy</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody id="myTable_2" name="table">
+
+            </tbody>
+        </table>
+
+        <h2 class="text-center text-success"><i class="fas fa-dice"></i> How Lucky did you get? <i
+                class="fas fa-dice"></i></h2>
+        <table class="table mb-5 text-center table-success table-striped table-hover" id="tableLuck">
+            <thead>
+                <tr class="bg-success text-white">
+                    <th scope="col">Trophy</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody id="myTable_3" name="table">
+
+            </tbody>
+        </table>
+
+        <a href="index.html"><button type="button" id="btnStartQuiz"
+                class="btn btn-danger btn-lg btn-block sticky-bottom">
+                Back to main page</button></a>
+    </div>
+
+
+    <script src="./js/quiz.js"></script>
+</body>
+
+</html>

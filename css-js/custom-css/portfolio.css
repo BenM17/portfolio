@@ -1,0 +1,68 @@
+/* cardflipper */
+
+.card-container {
+    position: relative;
+    height: 390px;
+    width: 19rem;
+    perspective: 200rem;
+}
+
+.card-container:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back {
+    transform: rotateY(0deg);
+    overflow-y: scroll;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    overflow-y: scroll;
+}
+
+.persoon {
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cardKleur {
+    background: lightgrey;
+}
+
+.imgbox {
+    box-shadow: 5px 5px 6px rgb(187, 186, 184);
+}
+
+.margin-up{
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .margin-up {
+        margin-top: 0px;
+    }
+}
+
+.cursor:hover{
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur273.cur), auto !important;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray; 
+}
+
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="img/gif">
+    <meta name="description" content="Welcome on my quizpage.">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="Coolest retro quiz in da whole wide world baby">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+
+<body class="bg-secondary" onload="showQuestions()">
+
+    <div class="container-xl mt-3">
+
+        <div class="card mb-3 border-0 bg-secondary">
+            <div class="embed-responsive embed-responsive-21by9">
+                <img id="imgQuiz" src="" class="card-img-fluid embed-responsive-item" alt="Quiz topic">
+            </div>
+            <div class="card-body">
+                <h5 id="vraag" class="card-title text-center text-warning"></h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <div class="card mb-3 border-warning">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img id="imgVraag" src="" class="card-img-top embed-responsive-item" alt="question topic">
+                    </div>
+                    <div id="txtVraag" class="card-header">Header</div>
+                    <div class="card-body text-warning">
+
+                        <div class="form-check">
+                            <input class="form-check-input" name="exampleRadios" type="radio" name="exampleRadios"
+                                id="rbAntwoord1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1" id="lblAntwoord1">
+                                ...
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="exampleRadios" type="radio" name="exampleRadios"
+                                id="rbAntwoord2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2" id="lblAntwoord2">
+                                ...
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="exampleRadios" type="radio" name="exampleRadios"
+                                id="rbAntwoord3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3" id="lblAntwoord3">
+                                ...
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="exampleRadios" type="radio" name="exampleRadios"
+                                id="rbAntwoord4" value="option4" checked>
+                            <label class="form-check-label" for="exampleRadios4" id="lblAntwoord4">
+                                ...
+                            </label>
+                        </div>
+                        <br>
+
+                        <button type="button" class="btn btn-primary" id="btnVolgendeVraag"
+                            onclick="btnVolgendeVraag_click()">Save & Next</button>
+
+                        <button type="button" class="btn btn-success text-warning" id="btnBerekenen"><a
+                                href="scorenbord_quiz.html"><i class="fas fa-star text-warning"></i>
+                                Show HighScore <i class="fas fa-star text-warning"></i></a></button>
+                    </div>
+                </div>
+                <h3 id="tijdelijke_score" class="text-center"></h3>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <script src="./js/quiz.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

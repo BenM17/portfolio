@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="img/mario2.png" type="img/gif">
+    <meta name="description" content="game geschiedenis">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="game geschiedenis">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="./css/jquery.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- PLUGIN-->
+    <link rel="stylesheet" href="Plugins/Simple-jQuery-Plugin-For-Opening-A-Popup-Window-On-Page-load/main.css">
+    <script src="./js/index.js"></script>
+
+    <title>Opdracht JQuery</title>
+</head>
+
+<body class="bg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top navkleur">
+        <a class="navbar-brand"><i class="fas fa-gamepad"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link scrollen" href="#bladzijde1">𝟙𝟡𝟝𝟠<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde2">𝟙𝟡𝟟𝟚</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde3">𝟙𝟡𝟟𝟞</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde4">𝟙𝟡𝟠𝟙</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde5">𝟙𝟡𝟠𝟡</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde6">𝟙𝟡𝟡𝟛</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde7">𝟚𝟘𝟘𝟙</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde8">𝟚𝟘𝟚𝟘</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scrollen" href="#bladzijde9">𝕋𝕚𝕞𝕖𝕃𝕚𝕟𝕖</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="win.html">!🆆🅸🅽 🆆🅸🅽 🆆🅸🅽!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PLUGIN BEGIN  -->
+    <div id="boxes">
+        <div id="dialog" class="window">
+            Welkom. Deze site is een oefening van JQuery. Zoals je kan zien heb ik de volgende dingen toegepast :
+            <br>
+            <br>
+            <ul>
+                <li>De site heeft 3 pagina's.</li>
+                <li>Smooth scroll.</li>
+                <li>Active links veranderen bij scrollen.</li>
+                <li>Img zoom op hover.</li>
+                <li>Auto scroll.</li>
+                <li>SlideDown/slideToggle van een div/tekst.</li>
+                <li>Blur effect.</li>
+                <li>Animaties van divs.</li>
+                <li>Een back to top animatie.</li>
+                <li>Een win win win pagina met een validatie formulier</li>
+                <li>Nadat het validatie formulier correct is ingevuld kom je op de laatste 'bonus' pagina terecht.</li>
+                <li>Deze popup plugin.</li>
+            </ul>
+            <hr class="hr">
+            <b> Ga je akkoord om mij het maximum aantal punten te geven?</b>
+            <div id="popupfoot">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="#" class="close agree">Ik ga akkoord</a> 
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="agree" style="color:red;" href="#">Ik ga niet akkoord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mask"></div>
+    </div>
+    <!-- PLUGIN EINDE -->
+
+
+    <div id="inleiding" class="container-xl">
+
+        <h1 class="text-center mt-5 titel">🅶🅰🅼🅴 🅶🅴🆂🅲🅷🅸🅴🅳🅴🅽🅸🆂</h1>
+        <hr class="titel">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="text-light mt-3"><b>Hoewel computergames tegenwoordig niet meer weg te denken
+                        zijn, is de gamesindustrie nog helemaal niet zo oud. Dit artikel geeft een kort overzicht van de
+                        ontstaansgeschiedenis van deze bijzondere wereld. </b></p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <hr class="hr">
+
+
+    <div class="container-xl">
+
+        <!-- bladzijde 1 -->
+        <div class="jaartallen text-light" id="bladzijde1">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/first_game.jpg" class="imgbox afbeelding img-fluid mt-5 mr-5"
+                        alt="1ste spel: Tennis for two">
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="tekst1" class="col-md-4">
+                    <p class="datums mr-5 op">𝟙𝟡𝟝𝟠</p>
+                    <p class="mr-5 op">Het allereerste computerspel In 1958 vond de Amerikaan William
+                        A. Higinbotham het spel Tennis for two uit. Higinbotham werkte destijds in het laboratorium van
+                        een kerncentrale in New York en was op zoek naar iets leuks om te laten zien tijdens de open
+                        dag. Zijn tennis-videogame werd eerst op een oscilloscoop weergegeven, maar later maakte
+                        Higinbotham gebruik van een kleine monitor. Omdat hij nooit een patent heeft aangevraagd op het
+                        tennis-spelletje, wordt zijn spel niet als eerste computerspel gezien. Die eer gaat naar de
+                        makers van het spel Spacewar! Zij maakten in 1962 een spel dat met twee personen tegelijk kon
+                        worden gespeeld. In eerste instantie was het spel enkel beschikbaar in universiteitskringen,
+                        maar toen het in 1973 opnieuw werd uitgebracht werd het alsnog een groot succes.</p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div id="streepje1" class="streepjeLinks op">
+                        <h3 class="titels1 ml-3">Allereerste computerspel: <br> Tennis for two</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bladzijde 2 -->
+        <div class="jaartallen text-light" id="bladzijde2">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-4">
+                    <img src="img/pong.png" class="afbeelding img-fluid mt-5 ml-5 op" alt="pong">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div id="streepje2" class="streepjeRechts op">
+                        <h3 class="titels2 ml-3 text-right mr-3">De doorbraak: <br> Pong</h3>
+                    </div>
+
+                </div>
+                <div id="tekst2" class="col-md-4">
+                    <p class="datums ml-5 op">𝟙𝟡𝟟𝟚</p>
+                    <p class="ml-5 op">Het eerste écht populaire spel dat voor de computer ontworpen werd, zag het
+                        levenslicht in 1972. Zelfs vandaag de dag wordt het spel nog in allerlei varianten gespeeld. We
+                        hebben het hier over Pong, het spelletje waarbij twee balkjes een balletje overspelen. Het spel
+                        werd gemaakt door Nolan Bushnell, de latere oprichter van Atari. In het begin was Pong slechts
+                        op één arcademachine in een kleine kroeg te spelen. De machine was binnen twee weken kapot,
+                        omdat er teveel kwartjes in zaten en het apparaat dat niet aan kon. Binnen de kortste keren
+                        stonden de arcademachines in verschillende amusementshallen over de hele wereld. Later verscheen
+                        het spel ook voor de computer.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+
+
+        <!-- bladzijde 3 -->
+        <div id="bladzijde3" class="jaartallen text-light">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/Atari2600.png" class="afbeelding img-fluid mt-5 mr-5 op" alt="Atari console">
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="tekst3" class="col-md-4">
+                    <p class="datums mr-5 op">𝟙𝟡𝟟𝟞</p>
+                    <p class="mr-5 op">De eerste spelcomputer die op de markt verscheen was de
+                        Magnavox Odyssey. Deze eerste console was niet erg populair, omdat de kwaliteit van het apparaat
+                        veel te wensen over liet. De tweede console, de Atari 2600, deed het een stuk beter. Relatief
+                        snel na de lancering maakten andere bedrijven echter kopieën van de populaire spelcomputer,
+                        waardoor Atari flink wat geld mis liep. De eerste console van Nintendo zag overigens pas tien
+                        jaar later, in 1985, het levenslicht. Deze console werd de NES genoemd en was meteen een groot
+                        succes.</p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div id="streepje3" class="streepjeLinks op">
+                        <h3 class="titels3 ml-3">Eerste succesvolle <br> spelcomputer: <br>Atari</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- bladzijde 4 -->
+        <div id="bladzijde4" class="jaartallen text-light">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-4">
+                    <img src="img/mario2.png" class="afbeelding img-fluid mt-5 ml-5 op" alt="super mario">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div id="streepje4" class="streepjeRechts op">
+                        <h3 class="titels4 ml-3 text-right mr-3">Het begin van <br> Super Mario</h3>
+                    </div>
+
+                </div>
+                <div id="tekst4" class="col-md-4">
+                    <p class="datums ml-5 op">𝟙𝟡𝟠𝟙</p>
+                    <p class="ml-5 op">Het begin van Super Mario Eén van de meest markante spelfiguren uit de gamewereld
+                        is Mario. Iedereen, van jong tot oud, kent de loodgieter in rode trui met tuinbroek. Mario is
+                        ontstaan in 1981, toen Shigeru Miyamoto zijn eerste tekening van het bekende karakter maakte. In
+                        deze tijd werd hij nog Jumpman genoemd en was het doel van het spel om zijn vriendin Pauline te
+                        redden uit de handen van de boosaardige Donkey Kong. Amerikaans personeel van Nintendo
+                        veranderde de naam Jumpman later in Mario, omdat het figuurtje veel zou lijken op de landheer
+                        Mario Segali.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <!-- bladzijde 5 -->
+        <div id="bladzijde5" class="jaartallen text-light">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/Game-Boy.png" class="afbeelding img-fluid mt-5 mr-5 op" alt="game boy">
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="tekst5" class="col-md-4">
+                    <p class="datums mr-5 op">𝟙𝟡𝟠𝟡</p>
+                    <p class="mr-5 op">De eerste handheld consoles en een nieuwe concurrent In 1989 verschenen de eerste
+                        twee handhelds: de Nintendo Gameboy en de Atari Lynx. De Gameboy had op dat moment nog een
+                        zwart-wit display, terwijl de Atari Lynx al direct was uitgerust met een kleurenschermpje. In
+                        hetzelfde jaar dat Nintendo en Atari met een handheld op de markt kwamen, mengde Sega zich in de
+                        strijd om de spelcomputers. Het merk bracht de Sega Megadrive op de markt en richtte zich op een
+                        wat oudere doelgroep. Ook introduceerde Sega een spelfiguur die de concurrentiestrijd met Mario
+                        aan zou gaan: Sonic the Hedgehog.</p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div id="streepje5" class="streepjeLinks op">
+                        <h3 class="titels5 ml-3">Eerste handheld <br> consoles</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bladzijde 6 -->
+        <div id="bladzijde6" class="jaartallen text-light">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-4">
+                    <img src="img/playstation1.png" class="afbeelding img-fluid mt-5 ml-5 op" alt="Playstation 1">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div id="streepje6" class="streepjeRechts op">
+                        <h3 class="titels6 ml-3 text-right mr-3">De komst van <br>Sony Playstation</h3>
+                    </div>
+
+                </div>
+                <div id="tekst6" class="col-md-4">
+                    <p class="datums ml-5 op">𝟙𝟡𝟡𝟛</p>
+                    <p class="ml-5 op">Rond 1993 kwam er een nieuw speler op de markt; Sony lanceerde haar Playstation
+                        en veroverde een groot deel van de markt. Nintendo volgde op de voet met haar Game Boy. In deze
+                        periode kwamen ook de eerste 3-D spelletjes op de markt. Meerdere ontwikkelaars brachten
+                        betaalbare en goede spelconsoles op de markt en als gevolg van vele marketing blunders legden
+                        grondleggers Atari en Sega het af tegen de schreeuwende en goedkopere nieuwkomers.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <!-- bladzijde 7 -->
+        <div id="bladzijde7" class="jaartallen text-light">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <img src="img/xbox-360.png" class="afbeelding img-fluid mt-5 mr-5 op" alt="x-box 360">
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="tekst7" class="col-md-4">
+                    <p class="datums mr-5 op">𝟚𝟘𝟘𝟙</p>
+                    <p class="mr-5 op">Op 15 november 2001 kwam er een geduchte concurrent voor Sony. De Xbox
+                        spelcomputer van Microsoft. Feitelijk is de Xbox een pc, maar omdat de software volledig
+                        aangepast is, is hier weinig van te merken. De machine functioneert net als iedere andere
+                        spelcomputer. De naam stamt af van “DirectX Box”, een van de codenamen tijdens de ontwikkeling.
+                        Omdat de ontwikkelaars vaak de naam afkorten naar “Xbox” via mailverkeer. Leek het een leuk idee
+                        om deze naam over te nemen als officieel. Vandaag de dag is samen met Sony, Xbox één van de
+                        grote namen in de wereld van gaming.</p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div id="streepje7" class="streepjeLinks op">
+                        <h3 class="titels7 ml-3">De komst van <br> Xbox</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bladzijde 8 -->
+        <div id="bladzijde8" class="jaartallen text-light mb-5">
+            <div class="lijn"></div>
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-4">
+                    <img src="img/vr_gaming.png" class="afbeelding img-fluid mt-5 ml-5 op" alt="VR headset">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div id="streepje8" class="streepjeRechts op">
+                        <h3 class="titels8 ml-3 text-right mr-3">De komst van <br>Virtual Reality</h3>
+                    </div>
+
+                </div>
+                <div id="tekst8" class="col-md-4">
+                    <p class="datums ml-5 op">𝟚𝟘𝟚𝟘</p>
+                    <p class="ml-5 op">Vandaag gaat de gaming wereld een stapje verder. VR of Virtual Reality simuleert
+                        een omgeving via een computer om de gebruiker via diverse zintuigen onder te dompelen in een
+                        ervaring. Via stereoscopische brillen ervaart de gebruiker alsof hij terecht komt in een andere
+                        wereld. Hoewel de computertechniek snel vordert en het vandaag de dag al veel invloed heeft op
+                        vele gebieden in de wereld. Heeft de technologie nog enige ontwikkeling door te maken voordat de
+                        gebruikservaring overeenkomt met die van de werkelijkheid.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bladzijde9"></div>
+    <div id="blokje"><img id="img" src="https://media.giphy.com/media/FsAFQWr5uq1by/source.gif" alt="">
+        <br>
+        <p class="spaceText text-center text-light">Come with me to the top!</p>
+    </div>
+    <button type="button" id="btnTijdlijn" class="mt-5 btn knopke btn-lg btn-block"><b>Timeline</b></button>
+    <div class="text-center tijdlijn">
+        <img id="tijdlijnAfbeelding" src="img/history-of-gaming2.jpg" class="rounded" alt="...">
+        <button type="button" id="btnTijdlijnSluiten" class="mt-5 btn knopke btn-lg btn-block"><b>timeline
+                Sluiten</b></button>
+    </div>
+
+    <button type="button" id="scrollDown" class="start mt-1 btn knopke btn-lg btn-block"><b>Start Scroll</b></button>
+    <button type="button" id="scrollDown" class="pauze mt-1 btn knopke btn-lg btn-block"><b>Pauze Scroll</b></button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="Plugins/Simple-jQuery-Plugin-For-Opening-A-Popup-Window-On-Page-load/main.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

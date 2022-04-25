@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="img/gif">
+    <meta name="description" content="Welcome on my quizpage.">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="Coolest retro quiz in da whole wide world baby">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+
+<body>
+    <div class="container-xl bg-light mb-3">
+
+        <div class="card mb-3 bg-secondary mt-3">
+            <div class="embed-responsive embed-responsive-21by9">
+                <img src="https://media.giphy.com/media/fQGf2FTKayOnKjwidV/giphy.gif"
+                    class="card-img-top embed-responsive-item" alt="Pay attention!">
+            </div>
+        </div>
+
+        <h2 class="text-center text-quizKeuze"> <i class="fas fa-exclamation text-quizKeuze"></i> Choose your quiz <i
+                class="fas fa-exclamation text-quizKeuze"></i></h2>
+
+        <div class="card-deck text-center text-white mt-3 mb-3">
+            <div class="card bg-primary">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="https://media.giphy.com/media/l396O8kn1qbPcb4ha/giphy.gif"
+                        class="card-img-top card-img-top embed-responsive-item" alt="Animals Quiz">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Animals!</h5>
+                    <p class="card-text"><a href="quiz_pagina.html"><button type="button" id="btnAnimals"
+                                onclick="selectQuiz(1)" class="btn btn-light">Start!</button></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card bg-warning">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="https://media.giphy.com/media/xT9DPQFUrS0gPc2pyg/giphy.gif"
+                        class="card-img-top card-img-top embed-responsive-item" alt="Retro games quiz">
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Retro Games!</h5>
+                    <p class="card-text"><a href="quiz_pagina.html"><button type="button" id="btnRetro"
+                                onclick="selectQuiz(2)" class="btn btn-light">Start!</button></a></p>
+                </div>
+            </div>
+
+            <div class="card bg-success">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <img src="https://media.giphy.com/media/lOgzjLU2mmN3VoUG4S/giphy.gif"
+                        class="card-img-top card-img-top embed-responsive-item" alt="Feeling lucky quiz">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Feeling lucky?</h5>
+                    <p class="card-text"><a href="quiz_pagina.html"><button type="button" id="btnLuck"
+                                onclick="selectQuiz(3)" class="btn btn-light">Start!</button></a></p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html"><button type="button" id="btnStartQuiz"
+                class="btn btn-danger btn-lg btn-block sticky-bottom mb-3">
+                Back to main page</button></a>
+    </div>
+
+    <script src="./js/quiz.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

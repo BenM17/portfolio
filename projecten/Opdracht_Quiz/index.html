@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="img/gif">
+    <meta name="description" content="Welcome on my quizpage.">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="Coolest retro quiz in da whole wide world baby">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>Quiz</title>
+</head>
+
+<body class="bg-light">
+    <div class="container-sm">
+        <div class="card bg-dark mt-3 mb-2">
+            <div class="embed-responsive embed-responsive-21by9">
+                <img src="https://media.giphy.com/media/jCL5JbYPYQz96/giphy.gif"
+                    class="card-img-top embed-responsive-item" alt="let me hit you with some knowledge #zoolander">
+            </div>
+            <div class="card-body text-center text-white">
+                <br>
+                <div class="card-text text-warning">
+                    <h1>Quiz Time!</h1>
+                    <p class="text-light">There are 3 different quizzes. <br>
+                        Each quiz has 10 questions, after the quiz is done you enter your name and you will be added to
+                        the scoreboard. <br>
+                        Tip : take a close look at (some) of the gifs for extra hints. <br>
+                        Be sure to Check out the rules!</p>
+                </div>
+                <button type="button" onclick="btnRegelement()" class="btn btn-warning">Rules!</button>
+            </div>
+        </div>
+
+        <a href="start_quiz.html"><button type="button" id="btnStartQuiz"
+                class="btn btn-info btn-lg btn-block mb-2 playbutton">
+                <i class="far fa-play-circle"></i> Choose a quiz ! <i class="far fa-play-circle"></i></button></a>
+
+        <a href="scorenbord_quiz.html"><button type="button" id="btnHighscore" onclick="btnHighscore()"
+                class="btn btn-success btn-lg btn-block">
+                <i class="fas fa-star text-warning"></i> High score ! <i
+                    class="fas fa-star text-warning"></i></button></a>
+
+        <footer class="mt-3 text-center text-muted">
+            <p>This quiz is made by Ben Martens r0790801 groep 1.2 avond.</p>
+        </footer>
+
+    </div>
+
+
+
+    <script src="./js/quiz.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

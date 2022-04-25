@@ -1,0 +1,234 @@
+.navkleur{
+    opacity: 90%;
+    background: rgb(54,36,7);
+    background: linear-gradient(0deg, rgba(54,36,7,1) 48%, rgba(91,77,58,0.9406950280112045) 100%);
+}
+.font{
+    font-family: 'Dancing Script', cursive; 
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.achtergrond{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/hout1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover; 
+}
+.lijst li{
+    padding-right: 65px;
+}
+#cookie{
+    font-size: x-small;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+.bg {
+    background-image: url("../img/kapper2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+.caption span.border { /* Alle spans met een div border spreken we hier aan */
+    color: rgb(201,228,224);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    background-color: rgb(54,36,7);
+    opacity: 50%;
+}
+.bruin{
+    background: linear-gradient(0deg, rgba(54,36,7,1) 48%, rgba(91,77,58,0.9406950280112045) 100%);
+}
+.hout{
+    background-image: url("../img/hout1.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;   */
+    background-size: cover;
+}
+.text-bruin{
+    color: rgb(54,36,7);
+}
+.text-wit{
+    color: rgb(248, 244, 231);
+}
+.wit{
+    background: rgb(248, 244, 231);
+    background: radial-gradient(circle, rgba(250, 249, 244, 0.922) 0%, rgba(242, 234, 217, 0.951) 0%);
+}
+.margin{
+    margin: 200px;
+}
+.titels{
+    font-size: 60px;
+    font-weight: bold;
+}
+.zoom {    
+    transition: transform 0.5s; /* Animatie tijd */
+    margin: 0;
+  }
+.zoom:hover {
+    transform: scale(1.2); /*zo ver inzoomen*/
+}
+.imgbox{ 
+    box-shadow: 10px 10px 12px black 
+}
+.idition{
+    font-family:Mistral;
+ }
+ .idition2{
+    font-family:Mistral;
+    font-size: xx-large;
+ }
+.divTekst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.afronden{
+    border-radius: 20px;
+}
+
+
+/* cardflipper */
+.card-container{
+    position: relative;
+    height: 429px;
+    width: 18rem;
+    perspective: 200rem;
+}
+.card-container:hover .card-front{
+    transform: rotateY(180deg);
+}
+.card-container:hover .card-back{
+    transform: rotateY(0deg);
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.personeel{
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+
+/* Begin scrollfoto (groepsfoto)*/
+.bgimg-1{
+    opacity: 0.5;
+    /* specific height */
+    height: 400px; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url('../img/groepsfotot2.jpg');
+    min-height: 100%; 
+}
+
+
+/*formulier*/
+form label {
+    display: inline-block;
+    width: 100px;
+}
+  
+  form div {
+    margin-bottom: 10px;
+}
+  
+.error {
+    color: brown;
+    margin-left: 5px;
+}
+  
+label.error {
+    display: inline;
+}
+.fas{
+    color: rgb(97, 58, 43) ;
+    
+}
+#knop{
+    background-color:rgba(121, 73, 55, 0.941);
+}
+.prijzen{
+    opacity: 70%;
+}
+.modalLijst{
+    background-color: rgb(54,36,7);
+    opacity: 70%;
+}
+
+
+/* Solcial media */
+.wrapper {
+    justify-content: center;
+    align-items: center;
+}
+.wrapper i {
+    padding-left: 15px;
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+    color: #3b5998
+}
+.wrapper a:nth-child(2) {
+    color: #1DA1F2;
+}
+.wrapper a:nth-child(3) {
+    color: black;
+}
+.wrapper i:hover {
+    margin-top: -3px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+.fa-instagram {
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 400px) {
+    .contactTable {
+      font-size: 10px;
+    }
+
+    /* divs van plaats veranderen. */
+    .first_div {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+      }  
+      .second_div {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+      }
+  }

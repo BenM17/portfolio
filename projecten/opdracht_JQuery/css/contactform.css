@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255, 255, 255, 0.8)), url("img/ps5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+form label {
+  display: inline-block;
+  width: 100px;
+} 
+form div {
+  margin-bottom: 10px;
+  color: rgb(221, 0, 147);
+  font-style: oblique;
+ } 
+.error {
+  color: red;
+   margin-left: 5px;
+}
+label.error {
+  display: inline;
+}
+.hr{
+  color: rgb(243, 104, 23);
+  background: rgb(136,238,93);
+  background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+  text-align: center;
+  border: solid;
+}
+.submitButton{
+  width: 387px;
+  font-size: larger;
+  background: rgb(136,238,93);
+  color: rgb(0, 0, 0);
+  border: solid;
+}
+.op{
+  opacity: 0.1;
+}
+.card label{
+  width: 200px;
+}
+
+.knopke{
+  color: rgb(168, 93, 238);
+  background: rgb(136,238,93);
+  background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+  border: solid;
+  font-size: 25px;
+}
+
+.knopke2{
+  color: rgb(168, 93, 238);
+  background: rgb(136,238,93);
+  background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+  border: solid;
+  font-size: 10px;
+}
+.knopke2 :hover{
+  color: black;
+}

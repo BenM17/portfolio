@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/Tennis_For_Two_in_1958.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+
+}
+.imgbox{ 
+    box-shadow: 5px 5px 7px black 
+}
+.navkleur{
+    background: rgb(136,238,93);
+    background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+}
+.hr{
+    color: rgb(136,238,93);
+    background: rgb(136,238,93);
+    background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+    border: solid;
+}
+.knopke{
+    color: rgb(168, 93, 238);
+    background: rgb(136,238,93);
+    background: linear-gradient(90deg, rgba(136,238,93,0.6644736842105263) 0%, rgba(83,200,201,1) 50%, rgba(184,70,233,1) 100%);
+    border: solid;
+    font-size: 25px;
+}
+.titel{
+    color:white;
+}
+.jaartallen{
+    height: auto;
+    display: inline-block;
+    width: auto;
+    opacity: 0.9;
+    filter: blur(3px);
+}
+.datums{
+    font-size: 80px;
+}
+.lijn{
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+}
+.streepjeLinks{
+    border-left: solid 2px rgb(221, 218, 218);
+    height: auto;
+    position: relative;
+}
+.streepjeRechts{
+    border-right: solid 2px rgb(221, 218, 218);
+    height: auto;
+    position: relative;
+}
+.op{
+    opacity: 0.8;
+}
+.opMax{
+    opacity: 1;
+}
+
+.zoom {    
+    transition: transform 1.5s; /* Animatie tijd */
+    margin: 0;
+  }
+.zoom:hover {
+    transform: scale(1.4); /*zo ver inzoomen*/
+}
+
+/* position: relative voor de animate functie te kunnen toepassen */
+p{
+    position: relative; 
+}
+img{
+    position: relative;
+}
+#tijdlijnAfbeelding{
+    position: relative;   
+}
+#scrollDown{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+.tijdlijn{
+    background: rgb(20, 19, 19);
+}
+#pauze{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+
+#blokje {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    filter: blur(0px);
+    cursor: pointer;
+}
+#img {
+    max-width: 100%;
+    max-height: 100%;
+}

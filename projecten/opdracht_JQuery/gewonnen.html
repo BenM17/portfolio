@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="img/mario2.png" type="img/gif">
+    <meta name="description" content="gewonnen!">
+    <meta name="author" content="Ben Martens">
+    <meta name="keywords" content="haha!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <title>Opdracht JQuery</title>
+</head>
+
+<body class="haha">
+
+    <style>
+        .haha {
+            background-image: url("https://media.giphy.com/media/PPi5c8l8WDY7if1L8z/source.gif");
+        }
+
+        .cancel {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            /* geen idee wat dit juist is maar zorgt er voor dat mijn button mooi in het midden staat */
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            color: rgb(208, 255, 0);
+            background-color: red;
+            padding: 10px;
+            width: 200px;
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            border-radius: 5px;
+            font-size: xx-large;
+
+            /* hoe lang het duurt voordat de animatie reset*/
+            animation: slidebg 2s linear infinite;
+        }
+
+        /* snelheid van de animatie */
+        @keyframes slidebg {
+            to {
+                background-position: 21vw;
+            }
+        }
+    </style>
+
+    <button class="cancel">CANCEL</button>
+
+    <script>
+        $(document).ready(function () {
+            let afbeeldingarray = [
+                "https://media.giphy.com/media/PPi5c8l8WDY7if1L8z/source.gif",
+                "https://media.giphy.com/media/Qaoh3qmKzOFVK/source.gif",
+                "https://media.giphy.com/media/5NIxdqWGp8aCk/giphy.gif",
+                "https://media.giphy.com/media/hUtaohU1UdG7K/giphy.gif",
+                "https://media.giphy.com/media/3rgXBOmTlzyFCURutG/source.gif",
+                "https://media.giphy.com/media/3orif7aLUehOfdmlXy/source.gif",
+                "https://media.giphy.com/media/ZvsIuK3ovaHoA/source.gif",
+                "https://media.giphy.com/media/CsA9ldJhWDHCo/source.gif",
+                "https://media.giphy.com/media/A363LZlQaX0ZO/source.gif",
+                "https://media.giphy.com/media/wMekYMNkng70Q/source.gif",
+                "https://media.giphy.com/media/FYnYcQoFmlPeU/source.gif",
+                "https://media.giphy.com/media/10DPDCjopE9FnO/source.gif",
+                "https://media.giphy.com/media/l0MYDaZrMxVz4p0pq/source.gif",
+                "https://media.giphy.com/media/3orieVgYC5oi9Xtvyw/source.gif",
+                "https://media.giphy.com/media/3oEjHI8WJv4x6UPDB6/source.gif",
+            ];
+
+            let achtergrondGif = $('.haha');
+            let teller = 0;
+
+            $(".cancel").on('click', function () {
+                if (teller >= 14) {
+                    teller = 0
+                }
+                else {
+                    teller++
+                }
+                let afbeelding = afbeeldingarray[teller];
+                achtergrondGif.css("background-image", "url(" + afbeelding + ")");
+
+            })
+        })
+    </script>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
