@@ -66,3 +66,7 @@
   ::-webkit-scrollbar-thumb:hover {
     background: black; 
 }
+
+.flipme {
+    z-index: +1
+}
